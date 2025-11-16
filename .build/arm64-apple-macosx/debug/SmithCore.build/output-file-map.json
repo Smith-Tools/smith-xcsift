@@ -1,0 +1,47 @@
+{
+  "": {
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/master.swiftdeps"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/HangDetector.swift": {
+    "dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/HangDetector.d",
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/HangDetector.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/HangDetector~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/HangDetector.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/HangDetector.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/Models.swift": {
+    "dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/Models.d",
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/Models.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/Models~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/Models.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/Models.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/OutputFormatter.swift": {
+    "dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/OutputFormatter.d",
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/OutputFormatter.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/OutputFormatter~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/OutputFormatter.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/OutputFormatter.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/ProjectDetector.swift": {
+    "dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/ProjectDetector.d",
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/ProjectDetector.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/ProjectDetector~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/ProjectDetector.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/ProjectDetector.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/SharedMonitor.swift": {
+    "dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/SharedMonitor.d",
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/SharedMonitor.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/SharedMonitor~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/SharedMonitor.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/SharedMonitor.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/SmithCore.swift": {
+    "dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/SmithCore.d",
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/SmithCore.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/SmithCore~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/SmithCore.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/SmithCore.dia"
+  }
+}
