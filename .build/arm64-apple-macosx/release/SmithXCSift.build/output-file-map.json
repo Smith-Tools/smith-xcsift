@@ -1,0 +1,25 @@
+{
+  "": {
+    "dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/SmithXCSift.build/SmithXCSift.d",
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/SmithXCSift.build/SmithXCSift.o",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/SmithXCSift.build/master.swiftdeps"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/Sources/SmithXCSift/HangDetector.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/SmithXCSift.build/HangDetector.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/SmithXCSift.build/HangDetector~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/SmithXCSift.build/HangDetector.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/SmithXCSift.build/HangDetector.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/Sources/SmithXCSift/RealtimeMonitor.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/SmithXCSift.build/RealtimeMonitor.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/SmithXCSift.build/RealtimeMonitor~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/SmithXCSift.build/RealtimeMonitor.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/SmithXCSift.build/RealtimeMonitor.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/Sources/SmithXCSift/SmithXCSift.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/SmithXCSift.build/SmithXCSift.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/SmithXCSift.build/SmithXCSift~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/SmithXCSift.build/SmithXCSift.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/SmithXCSift.build/SmithXCSift.dia"
+  }
+}

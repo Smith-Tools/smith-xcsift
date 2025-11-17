@@ -1,0 +1,301 @@
+{
+  "": {
+    "dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentParser.d",
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentParser.o",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/master.swiftdeps"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/BashCompletionsGenerator.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/BashCompletionsGenerator.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/BashCompletionsGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/BashCompletionsGenerator.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/BashCompletionsGenerator.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/CompletionsGenerator.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CompletionsGenerator.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CompletionsGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CompletionsGenerator.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CompletionsGenerator.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/FishCompletionsGenerator.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/FishCompletionsGenerator.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/FishCompletionsGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/FishCompletionsGenerator.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/FishCompletionsGenerator.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/ZshCompletionsGenerator.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ZshCompletionsGenerator.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ZshCompletionsGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ZshCompletionsGenerator.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ZshCompletionsGenerator.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Argument.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Argument.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Argument~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Argument.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Argument.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/ArgumentDiscussion.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentDiscussion.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentDiscussion~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentDiscussion.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentDiscussion.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/ArgumentHelp.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentHelp.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentHelp~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentHelp.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentHelp.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/ArgumentVisibility.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentVisibility.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentVisibility~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentVisibility.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentVisibility.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/CompletionKind.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CompletionKind.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CompletionKind~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CompletionKind.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CompletionKind.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Errors.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Errors.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Errors~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Errors.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Errors.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Flag.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Flag.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Flag~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Flag.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Flag.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/NameSpecification.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/NameSpecification.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/NameSpecification~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/NameSpecification.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/NameSpecification.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Option.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Option.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Option~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Option.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Option.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/OptionGroup.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/OptionGroup.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/OptionGroup~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/OptionGroup.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/OptionGroup.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/AsyncParsableCommand.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/AsyncParsableCommand.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/AsyncParsableCommand~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/AsyncParsableCommand.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/AsyncParsableCommand.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/CommandConfiguration.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CommandConfiguration.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CommandConfiguration~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CommandConfiguration.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CommandConfiguration.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/CommandGroup.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CommandGroup.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CommandGroup~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CommandGroup.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CommandGroup.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/EnumerableFlag.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/EnumerableFlag.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/EnumerableFlag~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/EnumerableFlag.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/EnumerableFlag.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ExpressibleByArgument.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ExpressibleByArgument.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ExpressibleByArgument~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ExpressibleByArgument.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ExpressibleByArgument.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ParsableArguments.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ParsableArguments.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ParsableArguments~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ParsableArguments.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ParsableArguments.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ParsableCommand.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ParsableCommand.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ParsableCommand~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ParsableCommand.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ParsableCommand.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentDecoder.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentDecoder.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentDecoder~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentDecoder.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentDecoder.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentDefinition.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentDefinition.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentDefinition~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentDefinition.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentDefinition.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentSet.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentSet.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentSet~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentSet.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ArgumentSet.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/CommandParser.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CommandParser.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CommandParser~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CommandParser.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CommandParser.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/InputKey.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/InputKey.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/InputKey~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/InputKey.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/InputKey.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/InputOrigin.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/InputOrigin.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/InputOrigin~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/InputOrigin.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/InputOrigin.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/Name.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Name.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Name~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Name.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Name.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/Parsed.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Parsed.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Parsed~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Parsed.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Parsed.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ParsedValues.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ParsedValues.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ParsedValues~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ParsedValues.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ParsedValues.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ParserError.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ParserError.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ParserError~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ParserError.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ParserError.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/SplitArguments.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/SplitArguments.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/SplitArguments~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/SplitArguments.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/SplitArguments.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/DumpHelpGenerator.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/DumpHelpGenerator.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/DumpHelpGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/DumpHelpGenerator.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/DumpHelpGenerator.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/HelpCommand.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/HelpCommand.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/HelpCommand~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/HelpCommand.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/HelpCommand.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/HelpGenerator.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/HelpGenerator.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/HelpGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/HelpGenerator.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/HelpGenerator.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/MessageInfo.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/MessageInfo.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/MessageInfo~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/MessageInfo.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/MessageInfo.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/UsageGenerator.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/UsageGenerator.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/UsageGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/UsageGenerator.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/UsageGenerator.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/CollectionExtensions.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CollectionExtensions.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CollectionExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CollectionExtensions.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CollectionExtensions.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/Mutex.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Mutex.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Mutex~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Mutex.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Mutex.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/Platform.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Platform.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Platform~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Platform.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Platform.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/SequenceExtensions.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/SequenceExtensions.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/SequenceExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/SequenceExtensions.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/SequenceExtensions.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/StringExtensions.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/StringExtensions.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/StringExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/StringExtensions.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/StringExtensions.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/SwiftExtensions.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/SwiftExtensions.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/SwiftExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/SwiftExtensions.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/SwiftExtensions.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/Tree.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Tree.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Tree~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Tree.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/Tree.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Validators/CodingKeyValidator.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CodingKeyValidator.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CodingKeyValidator~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CodingKeyValidator.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/CodingKeyValidator.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Validators/NonsenseFlagsValidator.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/NonsenseFlagsValidator.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/NonsenseFlagsValidator~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/NonsenseFlagsValidator.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/NonsenseFlagsValidator.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Validators/ParsableArgumentsValidation.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ParsableArgumentsValidation.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ParsableArgumentsValidation~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ParsableArgumentsValidation.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/ParsableArgumentsValidation.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Validators/PositionalArgumentsValidator.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/PositionalArgumentsValidator.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/PositionalArgumentsValidator~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/PositionalArgumentsValidator.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/PositionalArgumentsValidator.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Validators/UniqueNamesValidator.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/UniqueNamesValidator.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/UniqueNamesValidator~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/UniqueNamesValidator.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParser-tool.build/UniqueNamesValidator.dia"
+  }
+}

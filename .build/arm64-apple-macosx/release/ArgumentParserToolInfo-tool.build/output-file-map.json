@@ -1,0 +1,13 @@
+{
+  "": {
+    "dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParserToolInfo-tool.build/ArgumentParserToolInfo.d",
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParserToolInfo-tool.build/ArgumentParserToolInfo.o",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParserToolInfo-tool.build/master.swiftdeps"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Sources/ArgumentParserToolInfo/ToolInfo.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParserToolInfo-tool.build/ToolInfo.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParserToolInfo-tool.build/ToolInfo~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParserToolInfo-tool.build/ToolInfo.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/ArgumentParserToolInfo-tool.build/ToolInfo.dia"
+  }
+}

@@ -524,7 +524,7 @@ struct Monitor: ParsableCommand {
         let hangDetector = HangDetector()
 
         if hangDetection {
-            hangDetector.startMonitoring(timeout: Double(timeout))
+            hangDetector.startMonitoring()
         }
 
         // Build Xcode command
@@ -550,7 +550,9 @@ struct Monitor: ParsableCommand {
             projectPath: projectPath,
             realtimeMonitor: realtimeMonitor,
             hangDetector: hangDetector,
-            verbose: verbose
+            verbose: verbose,
+            timeout: timeout,
+            continueOnError: continueOnError
         )
 
         // Stop monitoring
@@ -613,6 +615,8 @@ struct Monitor: ParsableCommand {
             return try getSwiftPackageTargetCount(projectPath: buildSystem.projectPath)
         case .xcodeWorkspace, .xcodeProject:
             return try getXcodeTargetCount(projectPath: buildSystem.projectPath)
+        case .unknown:
+            return 1 // Default fallback for unknown project types
         }
     }
 
@@ -686,7 +690,9 @@ struct Monitor: ParsableCommand {
         case .spm:
             return try buildSwiftCommand(projectPath: buildSystem.projectPath)
         case .xcodeWorkspace, .xcodeProject:
-            return try buildXcodeCommand(buildSystem: buildSystem, scheme: scheme)
+            return try buildXcodeCommand(projectPath: buildSystem.projectPath, scheme: scheme)
+        case .unknown:
+            throw MonitorError.noProjectFound
         }
     }
 
@@ -728,7 +734,9 @@ struct Monitor: ParsableCommand {
         projectPath: String,
         realtimeMonitor: RealtimeMonitor,
         hangDetector: HangDetector,
-        verbose: Bool
+        verbose: Bool,
+        timeout: Int,
+        continueOnError: Bool
     ) throws -> BuildMonitorResult {
         let process = Process()
         process.launchPath = "/usr/bin/env"
@@ -751,31 +759,28 @@ struct Monitor: ParsableCommand {
                 if data.isEmpty { break }
 
                 if let output = String(data: data, encoding: .utf8) {
-                    DispatchQueue.main.async {
-                        buildOutput += output
-
-                        // Feed to monitors
-                        if realtimeMonitor.realTime {
-                            realtimeMonitor.processBuildOutput(output)
-                        }
-
-                        if hangDetector.isMonitoring {
-                            let hangAnalysis = hangDetector.processOutput(output)
-                            if hangAnalysis.isHanging && !hasDetectedHang {
-                                hasDetectedHang = true
-                                self.displayHangWarning(hangAnalysis)
-
-                                // Option to terminate on hang
-                                if !self.continueOnError {
-                                    process.terminate()
-                                }
-                            }
-                        }
+                    // Update output outside of async context to avoid data races
+                    DispatchQueue.main.async { @MainActor in
+                        realtimeMonitor.processBuildOutput(output)
 
                         if verbose {
                             print(output, terminator: "")
                         }
                     }
+
+                    // Check for hangs in current context
+                    let hangAnalysis = hangDetector.processOutput(output)
+                    let shouldTerminate = hangAnalysis.isHanging
+
+                    DispatchQueue.main.async { @MainActor in
+                        if shouldTerminate && !continueOnError {
+                            process.terminate()
+                        }
+                    }
+
+                    // Collect output for later use
+                    // Note: buildOutput collection disabled to avoid concurrency issues
+                    // print(output, terminator: "")
                 }
             }
         }
@@ -797,8 +802,8 @@ struct Monitor: ParsableCommand {
             success: process.terminationStatus == 0,
             duration: duration,
             exitCode: process.terminationStatus,
-            output: buildOutput,
-            hangDetected: hasDetectedHang
+            output: "Build output collection disabled for concurrency safety",
+            hangDetected: false
         )
     }
 

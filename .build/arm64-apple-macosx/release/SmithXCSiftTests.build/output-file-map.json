@@ -1,0 +1,13 @@
+{
+  "": {
+    "dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/SmithXCSiftTests.build/SmithXCSiftTests.d",
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/SmithXCSiftTests.build/SmithXCSiftTests.o",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/SmithXCSiftTests.build/master.swiftdeps"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/Tests/SmithXCSiftTests/SmithXCSiftTests.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/SmithXCSiftTests.build/SmithXCSiftTests.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/SmithXCSiftTests.build/SmithXCSiftTests~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/SmithXCSiftTests.build/SmithXCSiftTests.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/SmithXCSiftTests.build/SmithXCSiftTests.dia"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "": {
+    "dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/generate_docc_reference-tool.build/generate_docc_reference.d",
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/generate_docc_reference-tool.build/generate_docc_reference.o",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/generate_docc_reference-tool.build/master.swiftdeps"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Tools/generate-docc-reference/Extensions/ArgumentParser+Markdown.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/generate_docc_reference-tool.build/ArgumentParser+Markdown.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/generate_docc_reference-tool.build/ArgumentParser+Markdown~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/generate_docc_reference-tool.build/ArgumentParser+Markdown.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/generate_docc_reference-tool.build/ArgumentParser+Markdown.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Tools/generate-docc-reference/Extensions/Process+SimpleAPI.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/generate_docc_reference-tool.build/Process+SimpleAPI.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/generate_docc_reference-tool.build/Process+SimpleAPI~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/generate_docc_reference-tool.build/Process+SimpleAPI.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/generate_docc_reference-tool.build/Process+SimpleAPI.dia"
+  },
+  "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/checkouts/swift-argument-parser/Tools/generate-docc-reference/GenerateDoccReference.swift": {
+    "object": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/generate_docc_reference-tool.build/GenerateDoccReference.swift.o",
+    "swiftmodule": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/generate_docc_reference-tool.build/GenerateDoccReference~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/generate_docc_reference-tool.build/GenerateDoccReference.swiftdeps",
+    "diagnostics": "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/generate_docc_reference-tool.build/GenerateDoccReference.dia"
+  }
+}

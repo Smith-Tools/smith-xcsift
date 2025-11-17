@@ -1,0 +1,3 @@
+module smith_xcsiftPackageTests {
+    header "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/release/smith_xcsiftPackageTests.build/include/smith-xcsiftPackageTests-Swift.h"
+}

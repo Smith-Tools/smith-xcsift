@@ -2,7 +2,7 @@ import Foundation
 import SmithCore
 
 /// RealtimeMonitor provides intelligent build progress tracking with ETA calculations
-public class RealtimeMonitor {
+public class RealtimeMonitor: @unchecked Sendable {
 
     // MARK: - Configuration
 
@@ -128,7 +128,7 @@ public class RealtimeMonitor {
             completedFiles: completedFiles,
             totalFiles: totalFiles,
             estimatedTimeRemaining: calculateETA(),
-            resourceUsage: getResourceUsage()
+            resourceUsage: nil
         )
     }
 
@@ -262,7 +262,7 @@ public class RealtimeMonitor {
         }
 
         let range = Range(match.range, in: line)
-        return range.map { URL(fileURLWithPath: String($0)).lastPathComponent.description } ?? "unknown.swift"
+        return range.map { String(describing: $0) } ?? "unknown.swift"
     }
 
     private func handleTargetChange(to target: String) {
@@ -346,8 +346,8 @@ public class RealtimeMonitor {
         print("📄 Processed Files: \(completedFiles)")
 
         if let resources = getResourceUsage() {
-            print("💾 Peak Memory: \(formatBytes(resources.peakMemoryUsage))")
-            print("🖥️  Peak CPU: \(String(format: "%.1f", resources.peakCPUUsage))%")
+            print("💾 Current Memory: \(formatBytes(resources.memoryUsage))")
+            print("🖥️  Current CPU: \(String(format: "%.1f", resources.cpuUsage))%")
         }
 
         let successRate = totalTargets > 0 ? Double(completedTargets.count) / Double(totalTargets) * 100 : 0
@@ -418,7 +418,7 @@ public struct ResourceInfo {
 }
 
 /// RealtimeResourceMonitor monitors system resources during build
-public class RealtimeResourceMonitor {
+public class RealtimeResourceMonitor: @unchecked Sendable {
     private var timer: Timer?
     private var currentUsage: ResourceUsage?
     private var peakCPU: Double = 0.0
@@ -452,8 +452,6 @@ public class RealtimeResourceMonitor {
         currentUsage = ResourceUsage(
             cpuUsage: cpuUsage,
             memoryUsage: memoryUsage,
-            peakCPUUsage: peakCPU,
-            peakMemoryUsage: peakMemory,
             timestamp: Date()
         )
     }

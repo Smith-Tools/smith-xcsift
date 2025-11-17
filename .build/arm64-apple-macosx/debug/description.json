@@ -1422,27 +1422,39 @@
       "inputs" : [
         {
           "kind" : "file",
-          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/HangDetector.swift"
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/AutoFixEngine.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/Models.swift"
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/BuildDiagnostics.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/OutputFormatter.swift"
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/HangDetector.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/ProjectDetector.swift"
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/Models.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/SharedMonitor.swift"
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/OutputFormatter.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/SmithCore.swift"
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/ProjectDetector.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SharedMonitor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SyntaxValidators.swift"
         },
         {
           "kind" : "file",
@@ -1461,12 +1473,15 @@
       "moduleName" : "SmithCore",
       "moduleOutputPath" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/Modules/SmithCore.swiftmodule",
       "objects" : [
+        "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/AutoFixEngine.swift.o",
+        "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/BuildDiagnostics.swift.o",
         "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/HangDetector.swift.o",
         "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/Models.swift.o",
         "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/OutputFormatter.swift.o",
         "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/ProjectDetector.swift.o",
         "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/SharedMonitor.swift.o",
-        "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/SmithCore.swift.o"
+        "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/SmithCore.swift.o",
+        "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/SyntaxValidators.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -1527,6 +1542,14 @@
       "outputs" : [
         {
           "kind" : "file",
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/AutoFixEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/BuildDiagnostics.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/HangDetector.swift.o"
         },
         {
@@ -1551,17 +1574,24 @@
         },
         {
           "kind" : "file",
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/SyntaxValidators.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/Modules/SmithCore.swiftmodule"
         }
       ],
       "prepareForIndexing" : false,
       "sources" : [
-        "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/HangDetector.swift",
-        "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/Models.swift",
-        "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/OutputFormatter.swift",
-        "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/ProjectDetector.swift",
-        "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/SharedMonitor.swift",
-        "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/SmithCore.swift"
+        "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/AutoFixEngine.swift",
+        "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/BuildDiagnostics.swift",
+        "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/HangDetector.swift",
+        "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/Models.swift",
+        "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/OutputFormatter.swift",
+        "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/ProjectDetector.swift",
+        "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SharedMonitor.swift",
+        "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore.swift",
+        "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SyntaxValidators.swift"
       ],
       "tempsPath" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build",
       "wholeModuleOptimization" : false
@@ -3116,12 +3146,15 @@
       "-package-name",
       "smith_core",
       "-c",
-      "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/HangDetector.swift",
-      "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/Models.swift",
-      "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/OutputFormatter.swift",
-      "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/ProjectDetector.swift",
-      "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/SharedMonitor.swift",
-      "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/SmithCore.swift",
+      "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/AutoFixEngine.swift",
+      "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/BuildDiagnostics.swift",
+      "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/HangDetector.swift",
+      "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/Models.swift",
+      "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/OutputFormatter.swift",
+      "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/ProjectDetector.swift",
+      "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SharedMonitor.swift",
+      "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore.swift",
+      "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SyntaxValidators.swift",
       "-I",
       "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/Modules",
       "-target",
@@ -4046,27 +4079,39 @@
         },
         {
           "kind" : "file",
-          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/HangDetector.swift"
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/AutoFixEngine.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/Models.swift"
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/BuildDiagnostics.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/OutputFormatter.swift"
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/HangDetector.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/ProjectDetector.swift"
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/Models.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/SharedMonitor.swift"
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/OutputFormatter.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore/SmithCore.swift"
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/ProjectDetector.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SharedMonitor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SmithCore.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-core/Sources/SyntaxValidators.swift"
         }
       ],
       "outputFilePath" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/sources"
@@ -5794,6 +5839,14 @@
         },
         {
           "kind" : "file",
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/AutoFixEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/BuildDiagnostics.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/HangDetector.swift.o"
         },
         {
@@ -5815,6 +5868,10 @@
         {
           "kind" : "file",
           "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/SmithCore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/SyntaxValidators.swift.o"
         },
         {
           "kind" : "file",
@@ -6040,6 +6097,14 @@
         },
         {
           "kind" : "file",
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/AutoFixEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/BuildDiagnostics.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/HangDetector.swift.o"
         },
         {
@@ -6061,6 +6126,10 @@
         {
           "kind" : "file",
           "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/SmithCore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Plutonian/_Developer/Smith Tools/smith-xcsift/.build/arm64-apple-macosx/debug/SmithCore.build/SyntaxValidators.swift.o"
         },
         {
           "kind" : "file",
