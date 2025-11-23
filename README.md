@@ -1,34 +1,52 @@
 # Smith XCSift
 
-Smith Xcode Priority Rebuild - Fast Xcode build analysis and recovery tool.
+Smith Xcode Build Output Parser - Token-efficient build analysis for Claude agents.
 
 ## Overview
 
-Smith XCSift provides specialized Xcode build analysis with intelligent hang detection and priority rebuild strategies.
+Smith XCSift converts verbose xcodebuild output into structured, token-efficient formats designed for Claude agents and modern development workflows. It provides a 60% token reduction compared to raw build output while preserving essential diagnostic information.
 
 ## Key Features
 
-- Intelligent Hang Detection: Advanced root cause analysis for build hangs
-- Priority Rebuild Strategies: Specialized strategies for common failure modes
-- DerivedData Cleanup: Automated cache optimization and cleanup
-- Build Phase Timing: Detailed analysis of build phase performance
-- Automatic Retry: Enhanced retry mechanisms with optimized flags
-- Smith Core Integration: Consistent data models and shared functionality
+- **Token-Efficient Parsing**: Compresses verbose xcodebuild output into structured JSON
+- **Multiple Output Formats**: JSON, compact, summary, and detailed modes
+- **Error and Warning Extraction**: File/line information with categorized diagnostics
+- **Build Status Detection**: Success/failure detection with timing metrics
+- **Integration Friendly**: Optimized for AI agent consumption and CI/CD pipelines
+- **Smith Core Integration**: Consistent data models and shared functionality
 
 ## Usage
 
 ```bash
-# Analyze current Xcode build status
+# Parse xcodebuild output (primary use case)
+xcodebuild build -scheme MyApp 2>&1 | smith-xcsift parse
+
+# Token-efficient summary format
+xcodebuild build -scheme MyApp 2>&1 | smith-xcsift parse --format summary
+
+# Compact JSON for CI/CD
+xcodebuild build -scheme MyApp 2>&1 | smith-xcsift parse --format compact
+
+# Analyze project without building
 smith-xcsift analyze
 
-# Clean and rebuild with priority strategies
-smith-xcsift rebuild
+# Validate project configuration
+smith-xcsift validate
+```
 
-# Monitor build performance in real-time
-smith-xcsift monitor
+## Advanced Operations
 
-# Clean DerivedData and caches
-smith-xcsift clean
+For advanced operations like rebuild, clean, monitor, and diagnose, use smith-cli:
+
+```bash
+# Advanced rebuild with optimization
+smith rebuild --workspace Project.xcworkspace --scheme MyApp
+
+# Smart cleanup with dependency preservation
+smith clean --derived-data
+
+# Real-time build monitoring
+smith monitor --workspace Project.xcworkspace --scheme MyApp --eta
 ```
 
 ## Requirements
