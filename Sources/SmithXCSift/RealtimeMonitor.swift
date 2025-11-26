@@ -330,7 +330,7 @@ public class RealtimeMonitor: @unchecked Sendable {
         return max(0, remaining)
     }
 
-    private func getResourceUsage() -> ResourceUsage? {
+    private func getResourceUsage() -> ResourceInfo? {
         return resourceMonitor?.getCurrentUsage()
     }
 
@@ -420,7 +420,7 @@ public struct ResourceInfo {
 /// RealtimeResourceMonitor monitors system resources during build
 public class RealtimeResourceMonitor: @unchecked Sendable {
     private var timer: Timer?
-    private var currentUsage: ResourceUsage?
+    private var currentUsage: ResourceInfo?
     private var peakCPU: Double = 0.0
     private var peakMemory: Int64 = 0
 
@@ -435,7 +435,7 @@ public class RealtimeResourceMonitor: @unchecked Sendable {
         timer = nil
     }
 
-    public func getCurrentUsage() -> ResourceUsage? {
+    public func getCurrentUsage() -> ResourceInfo? {
         return currentUsage
     }
 
@@ -449,9 +449,11 @@ public class RealtimeResourceMonitor: @unchecked Sendable {
         peakCPU = max(peakCPU, cpuUsage)
         peakMemory = max(peakMemory, memoryUsage)
 
-        currentUsage = ResourceUsage(
+        currentUsage = ResourceInfo(
             cpuUsage: cpuUsage,
             memoryUsage: memoryUsage,
+            peakCPUUsage: peakCPU,
+            peakMemoryUsage: peakMemory,
             timestamp: Date()
         )
     }

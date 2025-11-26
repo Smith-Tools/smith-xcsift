@@ -15,11 +15,13 @@ struct SmithXCSift: ParsableCommand {
         - Error and warning extraction with file/line information
         - Build status detection and timing analysis
         - Multiple output formats (JSON, compact, detailed)
+        - Auto-parse when input is piped (AI-ergonomic design)
 
         Examples:
-          xcodebuild build -scheme MyApp 2>&1 | smith-xcsift parse
+          xcodebuild build -scheme MyApp 2>&1 | smith-xcsift
           smith-xcsift analyze
           smith-xcsift validate
+          smith-xcsift parse --format json (explicit parse)
         """,
         version: "3.0.0",
         subcommands: [
@@ -28,6 +30,140 @@ struct SmithXCSift: ParsableCommand {
             Validate.self
         ]
     )
+
+    func run() throws {
+        // Check if input is being piped - if so, auto-run parse with defaults
+        if isatty(STDIN_FILENO) != 0 {
+            // No piped input - show help
+            print("smith-xcsift: No input detected. Use subcommands or pipe xcodebuild output.")
+            print("Usage: xcodebuild build -scheme MyApp 2>&1 | smith-xcsift")
+            print("       smith-xcsift analyze")
+            print("       smith-xcsift validate")
+            throw ExitCode.failure
+        } else {
+            // Input is piped - auto-run parse with default settings for AI ergonomics
+            let input = FileHandle.standardInput.readDataToEndOfFile()
+            let output = String(data: input, encoding: .utf8) ?? ""
+
+            guard !output.isEmpty else {
+                print("{\"error\": \"No input received\"}")
+                throw ExitCode.failure
+            }
+
+            // Use parse logic with minimal format for AI-friendly output
+            let result = try parseXcodeBuildOutput(output)
+            try outputMinimal(result)
+        }
+    }
+
+    // Helper function to parse output (moved from Parse struct)
+    private func parseXcodeBuildOutput(_ output: String) throws -> XcodeBuildResult {
+        var diagnostics: [XcodeDiagnostic] = []
+        var buildMetrics = XcodeBuildMetrics()
+        var status: BuildStatus = .unknown
+        var timing = BuildTiming()
+
+        // Split output into lines for analysis
+        let lines = output.components(separatedBy: .newlines)
+
+        // Track build timing
+        var buildStartTime: Date?
+
+        for (index, line) in lines.enumerated() {
+            let trimmedLine = line.trimmingCharacters(in: .whitespaces)
+
+            // Detect build start
+            if trimmedLine.contains("BUILD START") || trimmedLine.contains("xcodebuild") {
+                buildStartTime = Date()
+                timing.startTime = buildStartTime
+            }
+
+            // Detect build status
+            if trimmedLine.contains("BUILD SUCCEEDED") {
+                status = .success
+                timing.endTime = Date()
+                if let start = buildStartTime {
+                    timing.totalDuration = Date().timeIntervalSince(start)
+                }
+            } else if trimmedLine.contains("BUILD FAILED") || trimmedLine.contains("error:") {
+                status = .failed
+                timing.endTime = Date()
+                if let start = buildStartTime {
+                    timing.totalDuration = Date().timeIntervalSince(start)
+                }
+            }
+
+
+            // Parse errors
+            if trimmedLine.contains(": error: ") {
+                let diagnostic = parseError(from: trimmedLine, lineNumber: index + 1)
+                diagnostics.append(diagnostic)
+                buildMetrics.errorCount += 1
+            }
+
+            // Parse warnings
+            if trimmedLine.contains(": warning: ") {
+                let diagnostic = parseWarning(from: trimmedLine, lineNumber: index + 1)
+                diagnostics.append(diagnostic)
+                buildMetrics.warningCount += 1
+            }
+
+            // Parse file compilation
+            if trimmedLine.contains("Compiling") && trimmedLine.hasSuffix(".swift") {
+                let filename = extractFilename(from: trimmedLine)
+                buildMetrics.compiledFiles.append(filename)
+            }
+        }
+
+        // Determine final status if not explicitly found
+        if status == .unknown {
+            status = buildMetrics.errorCount == 0 ? .success : .failed
+        }
+
+        return XcodeBuildResult(
+            status: status,
+            diagnostics: diagnostics,
+            metrics: buildMetrics,
+            timing: timing
+        )
+    }
+
+    // Helper functions (moved from Parse struct)
+    private func parseError(from line: String, lineNumber: Int) -> XcodeDiagnostic {
+        return parseXcodeDiagnostic(from: line, severity: .error, lineNumber: lineNumber)
+    }
+
+    private func parseWarning(from line: String, lineNumber: Int) -> XcodeDiagnostic {
+        return parseXcodeDiagnostic(from: line, severity: .warning, lineNumber: lineNumber)
+    }
+
+    private func parseXcodeDiagnostic(from line: String, severity: DiagnosticSeverity, lineNumber: Int) -> XcodeDiagnostic {
+        let components = line.components(separatedBy: ": ")
+        let location = components[0].trimmingCharacters(in: .whitespaces)
+        let messageComponents = components.count > 1 ? Array(components[1...]) : [String]()
+
+        return XcodeDiagnostic(
+            severity: severity,
+            category: .build,
+            message: messageComponents.joined(separator: ": "),
+            location: location,
+            lineNumber: lineNumber
+        )
+    }
+
+    private func extractFilename(from line: String) -> String {
+        let components = line.components(separatedBy: " ")
+        if let lastComponent = components.last, lastComponent.hasSuffix(".swift") {
+            return lastComponent
+        }
+        return "unknown.swift"
+    }
+
+    private func outputMinimal(_ result: XcodeBuildResult) throws {
+        let statusEmoji = result.status == .success ? "✅" : "❌"
+        let duration = String(format: "%.1fs", result.timing.totalDuration)
+        print("\(statusEmoji) \(result.status.rawValue.uppercased()) | ERRORS: \(result.metrics.errorCount) | WARNINGS: \(result.metrics.warningCount) | FILES: \(result.metrics.compiledFiles.count) | \(duration)")
+    }
 }
 
 // MARK: - Parse Command (Pipe Processor)
@@ -59,10 +195,10 @@ struct Parse: ParsableCommand {
     var severity: String = "info"
 
     @Flag(name: .long, help: "Include build timing metrics")
-    var timing = true
+    var timing = false
 
     @Flag(name: .long, help: "Include file-specific analysis")
-    var files = true
+    var files = false
 
     func run() throws {
         // Check if input is being piped
@@ -102,7 +238,7 @@ struct Parse: ParsableCommand {
     }
 
     private func parseXcodeBuildOutput(_ output: String) throws -> XcodeBuildResult {
-        var diagnostics: [Diagnostic] = []
+        var diagnostics: [XcodeDiagnostic] = []
         var buildMetrics = XcodeBuildMetrics()
         var status: BuildStatus = .unknown
         var timing = BuildTiming()
@@ -176,20 +312,20 @@ struct Parse: ParsableCommand {
         )
     }
 
-    private func parseError(from line: String, lineNumber: Int) -> Diagnostic {
-        return parseDiagnostic(from: line, severity: .error, lineNumber: lineNumber)
+    private func parseError(from line: String, lineNumber: Int) -> XcodeDiagnostic {
+        return parseXcodeDiagnostic(from: line, severity: .error, lineNumber: lineNumber)
     }
 
-    private func parseWarning(from line: String, lineNumber: Int) -> Diagnostic {
-        return parseDiagnostic(from: line, severity: .warning, lineNumber: lineNumber)
+    private func parseWarning(from line: String, lineNumber: Int) -> XcodeDiagnostic {
+        return parseXcodeDiagnostic(from: line, severity: .warning, lineNumber: lineNumber)
     }
 
-    private func parseDiagnostic(from line: String, severity: DiagnosticSeverity, lineNumber: Int) -> Diagnostic {
+    private func parseXcodeDiagnostic(from line: String, severity: DiagnosticSeverity, lineNumber: Int) -> XcodeDiagnostic {
         let components = line.components(separatedBy: ": ")
         let location = components[0].trimmingCharacters(in: .whitespaces)
         let messageComponents = components.count > 1 ? Array(components[1...]) : [String]()
 
-        return Diagnostic(
+        return XcodeDiagnostic(
             severity: severity,
             category: .build,
             message: messageComponents.joined(separator: ": "),
@@ -214,7 +350,7 @@ struct Parse: ParsableCommand {
         return "unknown.swift"
     }
 
-    private func shouldInclude(_ diagnostic: Diagnostic, severity: String) -> Bool {
+    private func shouldInclude(_ diagnostic: XcodeDiagnostic, severity: String) -> Bool {
         let severityLevels: [DiagnosticSeverity] = [.info, .warning, .error]
         guard let minSeverityIndex = severityLevels.firstIndex(of: DiagnosticSeverity(rawValue: severity) ?? .info),
               let diagnosticIndex = severityLevels.firstIndex(of: diagnostic.severity) else {
@@ -376,7 +512,7 @@ struct Validate: ParsableCommand {
             print("⚠️  Found \(issues.count) issue(s):")
             for issue in issues {
                 let emoji = emojiForSmithCoreDiagnosticSeverity(issue.severity)
-                print("\(emoji) [\(issue.category.rawValue)] \(issue.message)")
+                print("\(emoji) [\(String(describing: issue.category))] \(issue.message)")
                 if let suggestion = issue.suggestion {
                     print("   💡 \(suggestion)")
                 }
@@ -425,7 +561,7 @@ enum DiagnosticSeverity: String, Codable {
     case critical = "critical"
 }
 
-struct Diagnostic: Codable {
+struct XcodeDiagnostic: Codable {
     let severity: DiagnosticSeverity
     let category: Category
     let message: String
@@ -458,11 +594,11 @@ struct BuildTiming: Codable {
 
 struct XcodeBuildResult: Codable {
     let status: BuildStatus
-    let diagnostics: [Diagnostic]
+    let diagnostics: [XcodeDiagnostic]
     let metrics: XcodeBuildMetrics
     let timing: BuildTiming
 
-    init(status: BuildStatus, diagnostics: [Diagnostic], metrics: XcodeBuildMetrics, timing: BuildTiming) {
+    init(status: BuildStatus, diagnostics: [XcodeDiagnostic], metrics: XcodeBuildMetrics, timing: BuildTiming) {
         self.status = status
         self.diagnostics = diagnostics
         self.metrics = metrics
