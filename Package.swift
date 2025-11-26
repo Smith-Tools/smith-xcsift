@@ -13,7 +13,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(path: "../smith-core"),
+        .package(url: "https://github.com/Smith-Tools/smith-core", from: "1.1.0"),
         .package(url: "https://github.com/apple/swift-argument-parser", from: "1.3.0")
     ],
     targets: [
