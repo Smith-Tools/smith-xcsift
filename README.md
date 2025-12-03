@@ -13,7 +13,25 @@ Smith XCSift converts verbose xcodebuild output into structured, token-efficient
 - **Error and Warning Extraction**: File/line information with categorized diagnostics
 - **Build Status Detection**: Success/failure detection with timing metrics
 - **Integration Friendly**: Optimized for AI agent consumption and CI/CD pipelines
-- **Smith Core Integration**: Consistent data models and shared functionality
+- **Smith Foundation Integration**: Built on shared Smith Foundation libraries for consistent UX
+
+## Dependencies
+
+smith-xcsift is built on the Smith Foundation libraries and shared infrastructure:
+
+- **SmithBuildAnalysis**: Core Xcode build output parsing and analysis
+- **SmithProgress**: Progress tracking for long-running analysis operations
+- **SmithOutputFormatter**: Consistent output formatting with TTY detection
+- **SmithErrorHandling**: Structured error management with actionable suggestions
+
+These dependencies are automatically resolved via Swift Package Manager. No manual installation required.
+
+### Dependency Version Requirements
+
+- smith-build-analysis: latest (path-based dependency)
+- smith-foundation libraries: latest (path-based dependencies)
+
+For production use, these will reference semantic versioned packages.
 
 ## Usage
 

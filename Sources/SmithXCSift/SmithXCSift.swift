@@ -1,6 +1,9 @@
 import Foundation
 import ArgumentParser
-import SmithCore
+import SmithBuildAnalysis
+import SmithOutputFormatter
+import SmithErrorHandling
+import SmithProgress
 
 @main
 struct SmithXCSift: ParsableCommand {
@@ -34,11 +37,13 @@ struct SmithXCSift: ParsableCommand {
     func run() throws {
         // Check if input is being piped - if so, auto-run parse with defaults
         if isatty(STDIN_FILENO) != 0 {
-            // No piped input - show help
-            print("smith-xcsift: No input detected. Use subcommands or pipe xcodebuild output.")
-            print("Usage: xcodebuild build -scheme MyApp 2>&1 | smith-xcsift")
-            print("       smith-xcsift analyze")
-            print("       smith-xcsift validate")
+            // No piped input - show help using SmithOutputFormatter
+            let output = SmithCLIOutput()
+            output.warning("No input detected. Use subcommands or pipe xcodebuild output.")
+            output.info("Usage:")
+            output.info("xcodebuild build -scheme MyApp 2>&1 | smith-xcsift")
+            output.info("smith-xcsift analyze")
+            output.info("smith-xcsift validate")
             throw ExitCode.failure
         } else {
             // Input is piped - auto-run parse with default settings for AI ergonomics
@@ -46,12 +51,29 @@ struct SmithXCSift: ParsableCommand {
             let output = String(data: input, encoding: .utf8) ?? ""
 
             guard !output.isEmpty else {
-                print("{\"error\": \"No input received\"}")
+                let error = ResourceError(
+                    code: "SMITH_RES_001",
+                    message: "No input received",
+                    technicalDetails: "Stdin was empty or contained no data",
+                    suggestedActions: ["Verify xcodebuild is producing output", "Check build command syntax"],
+                    isFatal: true
+                )
+                print(error.jsonString)
                 throw ExitCode.failure
             }
 
-            // Use parse logic with minimal format for AI-friendly output
+            // ADD: Progress tracking
+            let progress = SmithProgress()
+            progress.start(title: "Processing Build Output")
+
             let result = try parseXcodeBuildOutput(output)
+
+            // ADD: Finish progress
+            progress.finish(
+                success: result.status != .failed,
+                finalMessage: "Processed \(result.diagnostics.count) diagnostics"
+            )
+
             try outputMinimal(result)
         }
     }
@@ -160,9 +182,10 @@ struct SmithXCSift: ParsableCommand {
     }
 
     private func outputMinimal(_ result: XcodeBuildResult) throws {
-        let statusEmoji = result.status == .success ? "✅" : "❌"
         let duration = String(format: "%.1fs", result.timing.totalDuration)
-        print("\(statusEmoji) \(result.status.rawValue.uppercased()) | ERRORS: \(result.metrics.errorCount) | WARNINGS: \(result.metrics.warningCount) | FILES: \(result.metrics.compiledFiles.count) | \(duration)")
+        let output = SmithCLIOutput()
+        let status = result.status == .success ? "SUCCESS" : "FAILED"
+        output.success("\(status) | ERRORS: \(result.metrics.errorCount) | WARNINGS: \(result.metrics.warningCount) | FILES: \(result.metrics.compiledFiles.count) | \(duration)")
     }
 }
 
@@ -203,8 +226,9 @@ struct Parse: ParsableCommand {
     func run() throws {
         // Check if input is being piped
         if isatty(STDIN_FILENO) != 0 {
-            print("smith-xcsift parse: No input detected. Pipe xcodebuild output.")
-            print("Usage: xcodebuild build -scheme MyApp 2>&1 | smith-xcsift parse")
+            let output = SmithCLIOutput()
+            output.warning("smith-xcsift parse: No input detected. Pipe xcodebuild output.")
+            output.info("Usage: xcodebuild build -scheme MyApp 2>&1 | smith-xcsift parse")
             throw ExitCode.failure
         }
 
@@ -212,12 +236,29 @@ struct Parse: ParsableCommand {
         let output = String(data: input, encoding: .utf8) ?? ""
 
         guard !output.isEmpty else {
-            print("{\"error\": \"No input received\"}")
+            let error = ResourceError(
+                code: "SMITH_RES_001",
+                message: "No input received",
+                technicalDetails: "Stdin was empty or contained no data",
+                suggestedActions: ["Verify xcodebuild is producing output", "Check build command syntax"],
+                isFatal: true
+            )
+            print(error.jsonString)
             throw ExitCode.failure
         }
 
+        // ADD: Progress tracking
+        let progress = SmithProgress()
+        progress.start(title: "Parsing Xcode Build Output")
+
         // Parse and format output using smith-xcsift logic
         let result = try parseXcodeBuildOutput(output)
+
+        // ADD: Finish progress
+        progress.finish(
+            success: result.status != .failed,
+            finalMessage: "Parse complete"
+        )
 
         switch format {
         case .json:
@@ -381,9 +422,10 @@ struct Parse: ParsableCommand {
     }
 
     private func outputMinimal(_ result: XcodeBuildResult) throws {
-        let statusEmoji = result.status == .success ? "✅" : "❌"
         let duration = String(format: "%.1fs", result.timing.totalDuration)
-        print("\(statusEmoji) \(result.status.rawValue.uppercased()) | ERRORS: \(result.metrics.errorCount) | WARNINGS: \(result.metrics.warningCount) | FILES: \(result.metrics.compiledFiles.count) | \(duration)")
+        let output = SmithCLIOutput()
+        let status = result.status == .success ? "SUCCESS" : "FAILED"
+        output.success("\(status) | ERRORS: \(result.metrics.errorCount) | WARNINGS: \(result.metrics.warningCount) | FILES: \(result.metrics.compiledFiles.count) | \(duration)")
     }
 
     private func outputSummary(_ result: XcodeBuildResult) throws {
@@ -453,15 +495,45 @@ struct Analyze: ParsableCommand {
     var detailed = false
 
     func run() throws {
+        let resolvedPath = (path as NSString).standardizingPath
+
+        // ADD: Progress tracking with phases
+        let progress = SmithProgress()
+        progress.start(title: "Analyzing Xcode Project")
+
+        progress.update(current: 1, total: 4, phase: "Detection", message: "Detecting project type")
+        let projectType = ProjectDetector.detectProjectType(at: resolvedPath)
+
+        progress.update(current: 2, total: 4, phase: "Analysis", message: "Running analysis")
+        let analysis = SmithCore.quickAnalyze(at: resolvedPath)
+
+        progress.update(current: 3, total: 4, phase: "Metrics", message: "Gathering metrics")
+
+        if detailed {
+            progress.update(current: 4, total: 4, phase: "Formatting", message: "Formatting detailed output")
+            print("\n📊 DETAILED METRICS")
+            print("===================")
+            print("Source Files: \(analysis.metrics.fileCount ?? 0)")
+            print("Dependencies: \(analysis.dependencyGraph.targetCount)")
+            print("Max Depth: \(analysis.dependencyGraph.maxDepth)")
+            print("Circular Dependencies: \(analysis.dependencyGraph.circularDeps ? "Yes" : "No")")
+        }
+
+        if json {
+            progress.update(current: 4, total: 4, phase: "JSON", message: "Generating JSON output")
+            if let jsonData = SmithCore.formatJSON(analysis) {
+                if let jsonString = String(data: jsonData, encoding: .utf8) {
+                    print(jsonString)
+                }
+            }
+        }
+
+        progress.finish(success: true, finalMessage: "Analysis complete")
+
         print("🔍 SMITH XCODE PROJECT ANALYSIS")
         print("===============================")
-
-        let resolvedPath = (path as NSString).standardizingPath
-        let projectType = ProjectDetector.detectProjectType(at: resolvedPath)
         print("📁 Project: \(URL(fileURLWithPath: resolvedPath).lastPathComponent)")
         print("🏗️  Type: \(formatProjectType(projectType))")
-
-        let analysis = SmithCore.quickAnalyze(at: resolvedPath)
 
         if detailed {
             print("\n📊 DETAILED METRICS")
@@ -496,15 +568,26 @@ struct Validate: ParsableCommand {
     var deep = false
 
     func run() throws {
+        let resolvedPath = (path as NSString).standardizingPath
+
+        // ADD: Progress tracking
+        let progress = SmithProgress()
+        progress.start(title: "Validating Xcode Project")
+
+        progress.update(current: 1, total: 3, phase: "Detection", message: "Detecting configuration")
+        let projectType = ProjectDetector.detectProjectType(at: resolvedPath)
+
+        progress.update(current: 2, total: 3, phase: "Analysis", message: "Analyzing structure")
+        let analysis = SmithCore.quickAnalyze(at: resolvedPath)
+
+        progress.update(current: 3, total: 3, phase: "Assessment", message: "Assessing risks")
+        let issues = SmithCore.assessBuildRisk(analysis)
+
+        progress.finish(success: issues.isEmpty, finalMessage: "Validation complete")
+
         print("✅ SMITH XCODE PROJECT VALIDATION")
         print("===============================")
-
-        let resolvedPath = (path as NSString).standardizingPath
-        let projectType = ProjectDetector.detectProjectType(at: resolvedPath)
         print("📊 Project Type: \(formatProjectType(projectType))")
-
-        let analysis = SmithCore.quickAnalyze(at: resolvedPath)
-        let issues = SmithCore.assessBuildRisk(analysis)
 
         if issues.isEmpty {
             print("✅ Project configuration looks good")
